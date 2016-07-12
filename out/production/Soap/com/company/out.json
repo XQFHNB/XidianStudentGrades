@@ -1,0 +1,168 @@
+{
+  "sid": "15020520014",
+  "sname": "null",
+  "grades": [
+    {
+      "cid": "PY1003",
+      "cname": "物理实验（Ⅰ）",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "良好",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "TC1001",
+      "cname": "金工实习",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "85",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1006",
+      "cname": "大学生心理健康教育",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "95",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1008-2",
+      "cname": "形势与政策（Ⅱ）",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "0.30",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "MS1002",
+      "cname": "高等数学A（Ⅱ）",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "71",
+      "cxf": "6",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1001",
+      "cname": "思想道德修养与法律基础",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "87",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1005",
+      "cname": "大学生职业发展",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "95",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1008-1",
+      "cname": "形势与政策（Ⅰ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "0.30",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HE1001",
+      "cname": "大学体育（Ⅰ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "73",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "ME1002",
+      "cname": "图学基础与计算机绘图",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "85",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "MS1001",
+      "cname": "高等数学A（Ⅰ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "68",
+      "cxf": "6",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "PY1001",
+      "cname": "大学物理（Ⅰ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "84",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1005",
+      "cname": "新生研讨课",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "80",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "FL1001",
+      "cname": "大学英语（Ⅰ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "66",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1001",
+      "cname": "计算机导论",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "84",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "AM1002",
+      "cname": "军事训练",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "AM1001",
+      "cname": "军事理论",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "77",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1002",
+      "cname": "C语言程序设计",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "49",
+      "cxf": "3",
+      "cstatus": "正常"
+    }
+  ]
+}
