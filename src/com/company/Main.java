@@ -1,6 +1,8 @@
 package com.company;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -12,9 +14,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,7 +37,7 @@ public class Main {
         URL url = new URL(endpoint);
         HttpURLConnection urlConn = (HttpURLConnection) url.openConnection();
 
-        urlConn.setConnectTimeout(20000);
+        urlConn.setConnectTimeout(5000);
         // POST请求
         urlConn.setRequestMethod(method);
         // 设置要发送消息
@@ -102,38 +102,24 @@ public class Main {
         System.out.println("--------------------start----------------------");
         //返回请求
         //MAX 26977
-        for(int index=0;index<6;index++){
-            System.out.println("--------------------"+index+"----------------------");
-            //List<SingleUser> datases = new ArrayList<>();
-            for(int i =index*5000+1;i<=index*5000+5000&&i<=26977;i+=1){
-                String xmlin = gradexml_h+i+gradexml_t;
-                String xmlStr = "";
-                try {
-                    xmlStr = invokeSrv(url,xmlin);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    System.out.println("=====error=====");
-                    SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
-                    String  datestr = df.format(new Date());
-                    writeFile("error",datestr+"   "+i+"\n");
-                }
-                SingleUser user =  parserXml(xmlStr);
 
-                Gson gson=new Gson();
-                String json=gson.toJson(user)+"\n";
-                writeFile("data_"+index*5000+1+"_"+index*5000+5000,json);
-
-                System.out.println("==写入数据"+i+"==");
-
-                if(i==3){
-                    return;
-                }
-                try {
-                    Thread.sleep(20);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        for(int i=1;i<=6;i++){
+            String fileName = "C:\\test\\log"+i+".json";
+            int start = readFileByLines(fileName);
+            int end = i*5000;
+            if(end>26977){
+                end = 26977;
             }
+            System.out.println("----------线程"+i+"启动"+start+"-----------");
+            int finalEnd = end;
+            int index =i;
+            new Thread(){
+                @Override
+                public void run() {
+                    super.run();
+                    getData("log"+index,start, finalEnd);
+                }
+            }.start();
         }
 
         System.out.println("--------------------stop----------------------");
@@ -141,10 +127,49 @@ public class Main {
     }
 
 
+
+
+
+    private static void getData(String Tag,int start, int end){
+        int i =1;
+        try {
+            for (i = start; i <= end; i += 1) {
+                String xmlin = gradexml_h + i + gradexml_t;
+                String xmlStr = "";
+                xmlStr = invokeSrv(url, xmlin);
+                SingleUser user = parserXml(i, xmlStr);
+                if (user == null) {
+                    continue;
+                }
+                Gson gson = new Gson();
+                String json = gson.toJson(user);
+                writeFile(user.sid, json);
+                writeFile(Tag,i+"\n");
+                System.out.println(Tag+"==写入数据" + i + "==");
+                int ramd = (int)(10+Math.random()*(50-1+1));
+                Thread.sleep(ramd);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println(Tag+"=====error=====");
+            SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+            String datestr = df.format(new Date());
+            writeFile(Tag+ " error", datestr + "   " + i + "\n");
+        }
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+        String datestr = df.format(new Date());
+        writeFile(Tag+ "ok", datestr + "   " + i + "\n");
+
+
+        System.out.println( " =====结束=====");
+    }
+
+
     /**
      * 解析XML文件
      */
-    private static SingleUser parserXml(String  xmlSrt) {
+    private static SingleUser parserXml(int id,String  xmlSrt) {
         SingleUser user = null;
         try {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -172,7 +197,7 @@ public class Main {
                             thirds.item(8).getTextContent(),thirds.item(2).getTextContent(),thirds.item(9).getTextContent(),thirds.item(11).getTextContent()));
 
                 }
-                user =new SingleUser(i,sid,sname,grades);
+                user =new SingleUser(id,sid,sname,grades);
             }
             return user;
 
@@ -221,25 +246,61 @@ public class Main {
      * @param name
      * @param txt
      */
-    private static void writeFile(String name,String txt){
+    private static void writeFile(String name,String txt) {
         File f = new File("c:\\test\\"+name+".json") ;
 
         try {
-            if(!f.exists()){
+            if(!f.exists()) {
                 f.createNewFile();
-                System.out.println("创建文件成功"+name);
             }
-
+            System.out.println("创建文件成功"+name);
             OutputStream out = null ;
+            //设为true为增量写入
             out = new FileOutputStream(f) ;
             byte b[] = txt.getBytes() ;
             out.write(b);
             out.close() ;
 
-
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+
+    /**
+     * 以行为单位读取文件，常用于读面向行的格式化文件
+     */
+    public static int readFileByLines(String fileName) {
+        File file = new File(fileName);
+        int i = 26998;
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
+            String tempString = null;
+            int line = 1;
+
+
+            // 一次读入一行，直到读入null为文件结束
+            while ((tempString = reader.readLine()) != null) {
+                // 显示行号
+                //System.out.println("line " + line + ": " + tempString);
+                i = Integer.parseInt(tempString);
+                //line++;
+                break;
+            }
+            reader.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e1) {
+                }
+            }
+        }
+
+        return i;
     }
 }
 

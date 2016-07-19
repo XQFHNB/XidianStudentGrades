@@ -1,137 +1,579 @@
 {
-  "sid": "15020520014",
+  "id": 0,
+  "sid": "13020140074",
   "sname": "null",
   "grades": [
     {
-      "cid": "PY1003",
-      "cname": "物理实验（Ⅰ）",
+      "cid": "EE5029",
+      "cname": "微波测量",
       "ctime": "2015-2016-2",
+      "ctype": "学院选修",
+      "cgrade": "65",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5030",
+      "cname": "天线原理",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "66",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5032",
+      "cname": "通信原理",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "39",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE3020",
+      "cname": "数字信号处理",
+      "ctime": "2015-2016-2",
+      "ctype": "必修",
+      "cgrade": "72",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5024",
+      "cname": "PCB电路设计",
+      "ctime": "2015-2016-2",
+      "ctype": "学院选修",
+      "cgrade": "75",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5025",
+      "cname": "电波工程",
+      "ctime": "2015-2016-2",
+      "ctype": "学院选修",
+      "cgrade": "73",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5026",
+      "cname": "电磁场数值分析",
+      "ctime": "2015-2016-2",
+      "ctype": "学院选修",
+      "cgrade": "82",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5027",
+      "cname": "电磁散射与隐身技术导论",
+      "ctime": "2015-2016-2",
+      "ctype": "学院选修",
+      "cgrade": "80",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1010-02",
+      "cname": "电子线路实验（Ⅲ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "84",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "TC1002",
+      "cname": "电装实习",
+      "ctime": "2015-2016-1",
       "ctype": "必修",
       "cgrade": "良好",
       "cxf": "1",
       "cstatus": "正常"
     },
     {
-      "cid": "TC1001",
-      "cname": "金工实习",
-      "ctime": "2015-2016-2",
+      "cid": "IB1009-02",
+      "cname": "电子线路实验（Ⅱ）",
+      "ctime": "2015-2016-1",
       "ctype": "必修",
+      "cgrade": "82",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE3019",
+      "cname": "射频电路基础",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "71",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5021",
+      "cname": "微波技术基础",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "94",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE3001",
+      "cname": "电磁场与电磁波",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "70",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1003-2",
+      "cname": "专业教育（Ⅱ）",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "0.20",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EM8018",
+      "cname": "新创企业融资与理财",
+      "ctime": "2015-2016-1",
+      "ctype": "人文限选",
+      "cgrade": "89",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE5175",
+      "cname": "软件技术基础 ",
+      "ctime": "2015-2016-1",
+      "ctype": "学院选修",
+      "cgrade": "70",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1001-02",
+      "cname": "微机原理与系统设计",
+      "ctime": "2015-2016-1",
+      "ctype": "必修",
+      "cgrade": "61",
+      "cxf": "5",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE3004",
+      "cname": "计算方法",
+      "ctime": "2015-2016-1",
+      "ctype": "学院选修",
+      "cgrade": "82",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "FL1008",
+      "cname": "国家英语六级",
+      "ctime": "2015-2016-1",
+      "ctype": "公共任选",
+      "cgrade": "通过",
+      "cxf": "2",
+      "cstatus": ""
+    },
+    {
+      "cid": "EE5022",
+      "cname": "微波技术虚拟实验",
+      "ctime": "2015-2016-1",
+      "ctype": "学院选修",
       "cgrade": "85",
       "cxf": "2",
       "cstatus": "正常"
     },
     {
-      "cid": "HA1006",
-      "cname": "大学生心理健康教育",
-      "ctime": "2015-2016-2",
+      "cid": "EE1002",
+      "cname": "C语言程序设计",
+      "ctime": "2014-2015-2",
       "ctype": "必修",
-      "cgrade": "95",
+      "cgrade": "60",
+      "cxf": "3",
+      "cstatus": "补考"
+    },
+    {
+      "cid": "FL1004",
+      "cname": "大学英语（Ⅳ）",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "75",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1004",
+      "cname": "毛泽东思想和中国特色社会主义理论体系概论",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "77",
+      "cxf": "6",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1008-4",
+      "cname": "形势与政策（Ⅳ）",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "80",
+      "cxf": "0.30",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HE1004",
+      "cname": "大学体育（Ⅳ）",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "90",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1003-02",
+      "cname": "信号与系统",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "65",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1005-02",
+      "cname": "模拟电子技术基础",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "60",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1006-02",
+      "cname": "数字电路与逻辑设计",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "63",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1008-02",
+      "cname": "电子线路实验（Ⅰ）",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "93",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1014",
+      "cname": "电路、信号与系统实验（Ⅱ）",
+      "ctime": "2014-2015-2",
+      "ctype": "必修",
+      "cgrade": "81",
+      "cxf": "0.50",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "LS9000",
+      "cname": "生命科学导论",
+      "ctime": "2014-2015-2",
+      "ctype": "公共任选",
+      "cgrade": "76",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "MS7002",
+      "cname": "数学模型",
+      "ctime": "2014-2015-2",
+      "ctype": "公共任选",
+      "cgrade": "63",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1008",
+      "cname": "MATLAB语言",
+      "ctime": "2014-2015-1",
+      "ctype": "学院选修",
+      "cgrade": "97",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1003-1",
+      "cname": "专业教育（Ⅰ）",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "0.30",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "FL1005",
+      "cname": "国家英语四级",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "通过",
+      "cxf": "1",
+      "cstatus": ""
+    },
+    {
+      "cid": "MS1008-02",
+      "cname": "概率论与数理统计",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "75",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "MS1009-02",
+      "cname": "场论与复变函数",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "90",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EM8010",
+      "cname": "组织行为学",
+      "ctime": "2014-2015-1",
+      "ctype": "人文限选",
+      "cgrade": "77",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1002-02",
+      "cname": "电路分析基础",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "73",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "PY1004",
+      "cname": "物理实验（Ⅱ）",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "中等",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1003",
+      "cname": "中国近现代史纲要",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "78",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA8019",
+      "cname": "大学语文",
+      "ctime": "2014-2015-1",
+      "ctype": "人文限选",
+      "cgrade": "84",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HE1003",
+      "cname": "大学体育（Ⅲ）",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "81",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "IB1013",
+      "cname": "电路、信号与系统实验（Ⅰ）",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "86",
+      "cxf": "0.50",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "FL1003",
+      "cname": "大学英语（Ⅲ）",
+      "ctime": "2014-2015-1",
+      "ctype": "必修",
+      "cgrade": "75",
+      "cxf": "4",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "TC1001",
+      "cname": "金工实习",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "良好",
+      "cxf": "2",
+      "cstatus": ""
+    },
+    {
+      "cid": "PY1003",
+      "cname": "物理实验（Ⅰ）",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "良好",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "PY1002",
+      "cname": "大学物理（Ⅱ）",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "60",
+      "cxf": "5",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "MS1007",
+      "cname": "线性代数",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "68",
+      "cxf": "3",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HE1002",
+      "cname": "大学体育（Ⅱ）",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "83",
       "cxf": "1",
       "cstatus": "正常"
     },
     {
       "cid": "HA1008-2",
       "cname": "形势与政策（Ⅱ）",
-      "ctime": "2015-2016-2",
+      "ctime": "2013-2014-2",
       "ctype": "必修",
-      "cgrade": "通过",
+      "cgrade": "优秀",
       "cxf": "0.30",
       "cstatus": "正常"
     },
     {
-      "cid": "MS1002",
-      "cname": "高等数学A（Ⅱ）",
-      "ctime": "2015-2016-2",
+      "cid": "HA1006",
+      "cname": "大学生心理健康教育",
+      "ctime": "2013-2014-2",
       "ctype": "必修",
-      "cgrade": "71",
-      "cxf": "6",
+      "cgrade": "良好",
+      "cxf": "1",
       "cstatus": "正常"
     },
     {
-      "cid": "HA1001",
-      "cname": "思想道德修养与法律基础",
-      "ctime": "2015-2016-1",
+      "cid": "HA1002",
+      "cname": "马克思主义基本原理",
+      "ctime": "2013-2014-2",
       "ctype": "必修",
-      "cgrade": "87",
+      "cgrade": "79",
       "cxf": "3",
       "cstatus": "正常"
     },
     {
-      "cid": "HA1005",
-      "cname": "大学生职业发展",
-      "ctime": "2015-2016-1",
+      "cid": "FL1002",
+      "cname": "大学英语（Ⅱ）",
+      "ctime": "2013-2014-2",
       "ctype": "必修",
-      "cgrade": "95",
-      "cxf": "1",
+      "cgrade": "80",
+      "cxf": "4",
       "cstatus": "正常"
     },
     {
-      "cid": "HA1008-1",
-      "cname": "形势与政策（Ⅰ）",
-      "ctime": "2015-2016-1",
+      "cid": "EE1009",
+      "cname": "数学物理方法",
+      "ctime": "2013-2014-2",
       "ctype": "必修",
-      "cgrade": "通过",
-      "cxf": "0.30",
-      "cstatus": "正常"
-    },
-    {
-      "cid": "HE1001",
-      "cname": "大学体育（Ⅰ）",
-      "ctime": "2015-2016-1",
-      "ctype": "必修",
-      "cgrade": "73",
-      "cxf": "1",
-      "cstatus": "正常"
-    },
-    {
-      "cid": "ME1002",
-      "cname": "图学基础与计算机绘图",
-      "ctime": "2015-2016-1",
-      "ctype": "必修",
-      "cgrade": "85",
+      "cgrade": "89",
       "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "EE1002",
+      "cname": "C语言程序设计",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "60",
+      "cxf": "3",
+      "cstatus": "补考"
+    },
+    {
+      "cid": "MS1002",
+      "cname": "高等数学A（Ⅱ）",
+      "ctime": "2013-2014-2",
+      "ctype": "必修",
+      "cgrade": "60",
+      "cxf": "6",
       "cstatus": "正常"
     },
     {
       "cid": "MS1001",
       "cname": "高等数学A（Ⅰ）",
-      "ctime": "2015-2016-1",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
-      "cgrade": "68",
+      "cgrade": "69",
       "cxf": "6",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "ME1002",
+      "cname": "图学基础与计算机绘图",
+      "ctime": "2013-2014-1",
+      "ctype": "必修",
+      "cgrade": "66",
+      "cxf": "2",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HE1001",
+      "cname": "大学体育（Ⅰ）",
+      "ctime": "2013-2014-1",
+      "ctype": "必修",
+      "cgrade": "82",
+      "cxf": "1",
+      "cstatus": "正常"
+    },
+    {
+      "cid": "HA1001",
+      "cname": "思想道德修养与法律基础",
+      "ctime": "2013-2014-1",
+      "ctype": "必修",
+      "cgrade": "91",
+      "cxf": "3",
       "cstatus": "正常"
     },
     {
       "cid": "PY1001",
       "cname": "大学物理（Ⅰ）",
-      "ctime": "2015-2016-1",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
-      "cgrade": "84",
+      "cgrade": "71",
       "cxf": "3",
-      "cstatus": "正常"
-    },
-    {
-      "cid": "EE1005",
-      "cname": "新生研讨课",
-      "ctime": "2015-2016-1",
-      "ctype": "必修",
-      "cgrade": "80",
-      "cxf": "1",
-      "cstatus": "正常"
-    },
-    {
-      "cid": "FL1001",
-      "cname": "大学英语（Ⅰ）",
-      "ctime": "2015-2016-1",
-      "ctype": "必修",
-      "cgrade": "66",
-      "cxf": "4",
       "cstatus": "正常"
     },
     {
       "cid": "EE1001",
       "cname": "计算机导论",
-      "ctime": "2015-2016-1",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
       "cgrade": "84",
       "cxf": "2",
@@ -140,7 +582,7 @@
     {
       "cid": "AM1002",
       "cname": "军事训练",
-      "ctime": "2015-2016-1",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
       "cgrade": "通过",
       "cxf": "1",
@@ -149,19 +591,19 @@
     {
       "cid": "AM1001",
       "cname": "军事理论",
-      "ctime": "2015-2016-1",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
-      "cgrade": "77",
+      "cgrade": "89",
       "cxf": "2",
       "cstatus": "正常"
     },
     {
-      "cid": "EE1002",
-      "cname": "C语言程序设计",
-      "ctime": "2015-2016-1",
+      "cid": "FL1001",
+      "cname": "大学英语（Ⅰ）",
+      "ctime": "2013-2014-1",
       "ctype": "必修",
-      "cgrade": "49",
-      "cxf": "3",
+      "cgrade": "78",
+      "cxf": "4",
       "cstatus": "正常"
     }
   ]
